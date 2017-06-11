@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Contact Us</title>
+<h1>Contact Us</h1>   
+
+
+<style type="text/css">
+body{text-align: center}
+#nav{list-style: none;margin:0;padding:0;position:relative;width:100%;text-align: center}
+.bar{display:inline;color:yellow;text-align:center; padding:13px 20px;text-decoration: none;background-color:red;font-family:verdana;}
+a:link{text-decoration: none; color: yellow}
+a:visited{text-decoration: none; color:yellow}
+
+</style>
+</head>
+
+<body>
+
+<ul id="nav">
+        <li class="bar"><a href="index.htm">Home</a> </li>
+        <li class="bar"><a href="map.htm">Career History</a> </li>
+        <li class="bar"><a href="Careerstats.htm">Career Stats</a> </li>
+        <li class="bar"><a href="earlylife.htm">Early Life</a> </li>
+        <li class="bar"><a href="contactus.htm">Contact Us</a> </li>
+        <li class="bar"><a href="sitemap.htm">Site map</a> </li>
+</ul>
+<br>
+
+  <form method="post" action=mailto:threelungpark@gmail.com enctype="type/plain">
+        
+    <p> Last Name 
+        <input type= "text" name="lname" placeholder="Last Name" maxlength="100" size="20"value="" />
+        First Name
+        <input type="text" name="fname" placeholder="First Name" maxlength="100" size="20" value="" />
+    </p>
+       <p> Email
+        <input type= "text" name="email" placeholder="jspark@soccer.com" maxlength="100" size="20"value="" />
+        
+    </p>
+    
+    <p> Gender:
+        Male <input type="radio" name="gender" value="male" />
+        Female <input type="radio" name="gender" value="female"/></p>
+    <br>
+
+<p>How much do you like JS Park? 
+<select name="Rating">
+<option value="I Love Him">I Love Him</option>
+<option value="I Like Him">I Like Him</option>
+<option value="No Opinion">No Opinion</option>
+<option value="I Dislike Him">Dislike Him</option>
+<option value="I Hate Him">Hate Him</option>
+
+
+
+
+</select></p>
+
+<br><br>
+<textarea name="comments" rows="10" cols="50">Write your comments here</textarea> 
+
+<br><br>
+
+<button type="submit" name="Submit" value="Submit">
+Submit
+</button>
+<button type="reset" value="Reset" name="Reset" >
+
+Reset
+</button>
+
+
+</body>
+
+</html>
