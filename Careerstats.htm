@@ -8,32 +8,44 @@
 
 
 <style type="text/css">
-h1{text-align: center}
+h1{text-align: center;color:yellow}
 table { border: none; border-collapse: collapse;margin-right:auto; margin-left:auto }
 td{ border-left: 1px solid #000;border-bottom: 1px solid black; border-top: 1px solid black; border-right: 1px solid black}
 .total{background-color:gray;}
-#nav{list-style: none;margin:0;padding:0;position:relative;width:100%;text-align: center}
-.bar{display:inline;color:yellow;text-align:center; padding:13px 20px;text-decoration: none;background-color:red;font-family:verdana;}
+#nav{list-style: none;margin:0;padding:0;width:100%;text-align: center}
+.bar{display:inline;color:yellow;text-align:center; padding:13px 10px;text-decoration: none;background-color:red;font-family:verdana;}
 a:link{text-decoration: none; color: yellow}
 a:visited{text-decoration: none; color:yellow}
 .head{text-align: center}
+#left{float: left; margin-left:15%}
+body{background-image:url("Images/background.png");background-size: cover;color:yellow }
+#right{margin-top:-18px}
 
 
 
 </style>
+
+ <script type="text/javascript">
+                
+
+
+ </script>
+
 </head>
 
 <body>
-<ul id="nav">
+<ul id="nav" onmouseover="fill()">
         <li class="bar"><a href="index.htm">Home</a> </li>
         <li class="bar"><a href="map.htm">Career History</a> </li>
         <li class="bar"><a href="Careerstats.htm">Career Stats</a> </li>
         <li class="bar"><a href="earlylife.htm">Early Life</a> </li>
         <li class="bar"><a href="contactus.htm">Contact Us</a> </li>
         <li class="bar"><a href="sitemap.htm">Site map</a> </li>
+        <li class="bar"><a href="credits.htm">Credits</a></li>
+</div>
 </ul>
 <p>
-        <table>
+        <table id="left">
               
                 <tr>
                         <td class="head" colspan="6">Club</td>
@@ -114,8 +126,9 @@ a:visited{text-decoration: none; color:yellow}
                 </tr>
                 <tr class="head">
 </table>
+
 <br>
-<table>
+<table id="right">
                 <tr>
                     <td class="head" colspan="6">International</td>
                 </tr>
@@ -166,18 +179,8 @@ a:visited{text-decoration: none; color:yellow}
                         <td>Total</td><td>43</td><td>4</td><td>57</td><td>9</td>
                 </tr>
         </table>
-        <br>
-        <table>
-        
-                <caption>Lifetime Total<caption>
-                
-                <tr class="total">
-                        <td>App</td><td>Goal</td>
-                </tr>
-                <tr class="total">
-                        <td>445</td><td>63</td>
-                </tr>
-        </table>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>        
+
  </p>
 </body>
 
