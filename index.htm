@@ -19,7 +19,7 @@ body{background-image: url("Images/MU.jpg"); background-size:cover
 }
 h1{text-align: center; color:yellow
 }
-img{width: 650px;height: 450px; margin-left: -275px;margin-top:25px}
+img{width: 500px;height: 350px; margin-left: -275px;margin-top:25px}
 p{text-align: center}
 div{float: left;margin-top:350px}
 h5{color:white}
@@ -30,9 +30,47 @@ a:visited{text-decoration: none; color:yellow}
 
 </style>
 
+<script>
+var soccerslides = new Array("Images/slideshow2.jpg","Images/slideshow3.jpg","Images/jspark.jpg","Images/slideshow5.jpg");
+var i = 0;
+
+function slideShow(){
+var soccerimages = document.getElementById("slides");
+if(i == soccerslides.length){
+        i=0;
+        
+}
+soccerimages.src = soccerslides[i];
+i++;
+setTimeout("slideShow()", 3500);
+}
+
+function change(){
+        var heading = document.getElementById("first");
+       
+        heading.style.color = "red";
+
+}
+function changeback(){
+        var  heading = document.getElementById("first")
+        
+        heading.style.color = "yellow";
+}
+</script>
+
+
+
+
+
+
+
+
+
 <title>The Man with 3 Lungs: Park Ji Sung</title>
 </head>
-<h1> The History of A Legend:<br> Ji Sung "Three Lung" Park</h1>
+<body onload="slideShow()">
+
+<h1 onmouseover="change()"  onmouseout="changeback()"    id="first"> The History of A Legend:<br> Ji Sung "Three Lung" Park</h1>
 
 
 <p>
@@ -68,7 +106,8 @@ a:visited{text-decoration: none; color:yellow}
 
 <!--</div>-->
 <p>
-<img src="Images/slideshow3.jpg" alt="Park Ji Sung" title="Park Ji Sung">
+<img id="slides" src="Images/slideshow2.jpg" alt="Park Ji Sung" title="Park Ji Sung">
+
  </p>       
 
 </body>

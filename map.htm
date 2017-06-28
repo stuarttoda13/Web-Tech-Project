@@ -13,12 +13,35 @@ body{color:yellow; background-image:url("Images/background.png");background-size
 .bar{display:inline;color:yellow;text-align:center; padding:13px 10px;text-decoration: none;background-color:red;font-family:verdana;}
 a:link{text-decoration: none; color: yellow}
 a:visited{text-decoration: none; color:yellow}
-
+#hi{margin-left:65%;margin-right:300px}
+#move{text-align:center;background-color:yellow; font-family: arial;width:260px;height:50px;margin-left:550px;margin-right:10px; color:red;position:fixed;}
 
 
 </style>
 
+<script>
+    var p = 300; k = 0;
+    var movelist = new Array("Kyoto Purple Sangas", "PSV Eindhoven", "Manchester United", "Queens Park Ranger");
+        function doScroll() {
 
+            document.getElementById("move").innerHTML = movelist[k];
+            document.getElementById("move").style.left = p + "px";
+            if (p > 450) {
+                p = 305;
+                k++;
+                if (k == movelist.length) {
+                    k = 0;
+                }
+
+                document.getElementById("move").style.left = p + "px";
+            }
+            else {
+                p = p + 5;
+            }
+            setTimeout("doScroll()", 100);
+        }
+
+</script>
 
 
 
@@ -30,7 +53,7 @@ a:visited{text-decoration: none; color:yellow}
 
 </head>
 
-<body>
+<body onload="doScroll()">
 <ul id="nav">
         <li class="bar"><a href="index.htm">Home</a> </li>
         <li class="bar"><a href="map.htm">Career History</a> </li>
@@ -67,6 +90,10 @@ a:visited{text-decoration: none; color:yellow}
         <li><a href="japan.htm"style="color:yellow">Japan - Kyoto Purple Sanga</a></li>
     </ul>
 </div>
+</p>
+<br><br><br><br><br>
+<p id="hi">
+    <h2 id="move"></h2>
 </p>
 </body>
 

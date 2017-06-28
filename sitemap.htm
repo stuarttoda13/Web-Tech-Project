@@ -4,7 +4,7 @@
 <head>
 
 <title>Sitemap</title>
-<h1>Sitemap</h1>   
+  
 
 
 <style type="text/css">
@@ -12,14 +12,14 @@
 .bar{display:inline;color:yellow;text-align:center; padding:13px 10px;text-decoration: none;background-color:red;font-family:verdana;}
 a:link{text-decoration: none; color: yellow}
 a:visited{text-decoration: none; color:yellow}
-body{background-image:url("Images/background.png"); background-size: cover;text-align: center}
+body{color:yellow;background-image:url("Images/background.png"); background-size: cover;text-align: center}
 h1{text-align: center;color:yellow}
 #mid{
     width:200px;
     margin:0 auto;
     text-align:left;color:yellow;
     padding-left:120pt}
-p{text-align: center}
+p{text-align: center;color:yellow}
 
 
 
@@ -28,9 +28,29 @@ body{background-image:url("Images/background.png");background-size: cover}
 
 
 </style>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+<script type="text/javascript">
+            $(document).ready(function(){
+                $("#surprise").click(function(){
+                    $("#first").animate({top:'100px'},5000);
+                });
+                })
+</script>
+
+
+
+
+
+
+
+
 </head>
 
 <body>
+<div id="first">
+    <h1>Sitemap</h1> 
+</div>
  <ul id="nav">
         <li class="bar"><a href="index.htm">Home</a> </li>
         <li class="bar"><a href="map.htm">Career History</a> </li>
@@ -56,13 +76,13 @@ body{background-image:url("Images/background.png");background-size: cover}
             <li><a href="england.htm">England</a></li>
            <li> <a href="japan.htm">Japan</a></li>
             <li> <a href="southkorea.htm">South Korea</a></li>
-           <li> <a href="netherlands.htm">Netherlands</a</li>
+           <li> <a href="netherlands.htm">Netherlands</a></li>
            </ul>
         
 </p>
+<br><br>
 
-
-<br><br><br><br>
+<br><br>
 
 <p>
    Honor Code: I pledge my honor that I have neither received nor provided unauthorized assistance during the completion of this work. I have read the term project instructions and observed all the restrictions and limitations specified therein
